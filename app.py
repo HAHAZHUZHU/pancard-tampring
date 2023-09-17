@@ -13,9 +13,10 @@ import os
 
 # 创建一个 flask 应用的实例
 app = Flask(__name__)
+port = int(os.environ.get('PORT', 33507))
 
-if __name__ == '__main__':
-   app.run()
+
+
 
 
 
@@ -47,4 +48,7 @@ from app import views
 
 # 这个代码片段将 /home 路径映射到了 home 视图函数上。
 
+
+if __name__ == '__main__':
+   app.run(debug=False, port=port)
 
