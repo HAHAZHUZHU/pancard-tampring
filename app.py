@@ -13,7 +13,7 @@ import os
 
 # 创建一个 flask 应用的实例
 app = Flask(__name__)
-port = int(os.environ.get('PORT', 33507))
+port = int(os.environ.get('PORT', 33508))
 
 
 
@@ -50,5 +50,5 @@ else:
 
 
 if __name__ == '__main__':
-   app.run(debug=False, host='0.0.0.0', port=port)
+   app.run(debug=True, host='0.0.0.0', port=port)
 
