@@ -1,1 +1,1 @@
-heroku ps:scale web=1 -app pancard-tampered
+heroku ps:scale web=1 --app pancard-tampered
