@@ -32,7 +32,7 @@ else:
     print('*********** Production environment ***********')
     app.config.from_object("config.ProductionConfig")
 
-from app import views
+# from app import views
 
 # 这行代码 from app import views 在 Flask 应用中有着重要的作用。让我解释一下它的作用：
 
