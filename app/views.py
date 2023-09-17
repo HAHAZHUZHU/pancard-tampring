@@ -24,10 +24,12 @@ def index():
     if request.method == "GET":
         # render_template 是 Flask web应用框架中的一个函数，它用于渲染HTML模板并将渲染后的HTML页面作为HTTP响应返回给客户端浏览器。这个函数通常用于生成动态的网页内容，其中包含了从服务器端传递到模板中的数据。
         # 一旦导入了render_template，你可以在路由处理函数中使用它来渲染HTML模板
+        print('yes')
         return render_template("index.html")
 
 	# Execute if reuqest is post
     if request.method == "POST":
+        
         # Get uploaded image
         # request.files 是 request 对象的一个属性，用于访问客户端通过HTTP POST请求上传的文件数据。
         # 'file_upload' 是一个表单字段的名称，通常对应于HTML表单中的一个文件上传字段
